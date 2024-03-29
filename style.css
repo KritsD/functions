@@ -2,3 +2,19 @@
     border-left: 6px solid rgb(0, 0, 0);
     height: 500px;
   }
+
+body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 3.7rem;
+    left: 0;
+    background: yellow;
+    height: 100%
+}
+
+main {
+    margin-left:20rem;
+}
