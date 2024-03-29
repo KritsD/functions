@@ -15,20 +15,32 @@
                 <hr>
             </header>
 
-            <nav>
-                <h2>What are you feeling?</h2>
-                <button><a href="#">Options</a></button>
-                <br>
-                <h2>Where are you?</h2>
-                <button><a href="#">Options</a></button>
-            </nav>
+            <ol>
+            <li>
+                <nav>
+                    <h2>What are you feeling?</h2>
+                    <select id="data-list"></select>
+                    
+                    
+                    <br>
+                    <h2>How much time do you have?</h2>
+                    <select id="data-list2"></select>
+                    
+                    
+                </nav>
+                
+            </li>
+            <button onclick="outputSolution()">Help my poor eyes</button>
 
-            <main>
-                <section>
-                    <h1>Your Results</h1>
-                    <p> Here they are!!!</p>
-                </section>
-            </main>
+            <li>
+                <main> 
+                    <section>
+                        <h1>Your Results</h1>
+                        <div id = "resultsDiv"> Here they are!!!</div>
+                    </section>
+                </main>
+            </li>
+            </ol>
     </body>
 
 </html>

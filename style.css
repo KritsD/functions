@@ -1,20 +1,23 @@
-.verticalline {
-    border-left: 6px solid rgb(0, 0, 0);
-    height: 500px;
-  }
-
-body {
-    margin: 0;
-}
-
-nav {
+/*nav {
     position: fixed;
     top: 3.7rem;
     left: 0;
     background: yellow;
     height: 100%
+}*/
+
+ol {
+    display: grid;
 }
 
-main {
-    margin-left:20rem;
+ol:first-child {
+    grid-template-columns: 2fr, 1fr;
+}
+
+ol:nth-child(2) {
+	grid-template-rows: 2fr 1fr;
+}
+
+.HeadacheClass {
+color: red;
 }

@@ -1,0 +1,15 @@
+{
+
+
+"availableTime": [
+    {"text": "A minute", "value":"A minute"},
+    {"text": "I have some time", "value":"I have some time"}
+],
+
+"symptoms": [
+    {"text": "Headache", "value":"Headache"},
+    {"text": "Sore Eyes", "value":"Sore Eyes"}
+]
+
+
+}
