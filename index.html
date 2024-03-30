@@ -11,36 +11,32 @@
 
     <body>
             <header>
-                <h1>Fix Your Eye!</h1>
+                <h1>+ eye care +</h1>
                 <hr>
             </header>
 
-            <ol>
-            <li>
+            <main>
                 <nav>
-                    <h2>What are you feeling?</h2>
-                    <select id="data-list"></select>
-                    
-                    
-                    <br>
-                    <h2>How much time do you have?</h2>
-                    <select id="data-list2"></select>
-                    
-                    
+                    <div>
+                        <h2>What are you feeling?</h2>
+                        <button><h3><select id="data-list2"></select><i class="arrow down"></i></h3></button>
+                    </div>
+
+                    <div>
+                        <h2>How much time do you have?</h2>
+                        <button><h3><select id="data-list"></select><i class="arrow down"></i></h3></button>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3><button onclick="outputSolution()">Find me a fix</button></h3>
+                    </div>
                 </nav>
                 
-            </li>
-            <button onclick="outputSolution()">Help my poor eyes</button>
-
-            <li>
-                <main> 
-                    <section>
-                        <h1>Your Results</h1>
-                        <div id = "resultsDiv"> Here they are!!!</div>
-                    </section>
-                </main>
-            </li>
-            </ol>
+                <section>
+                    <h2>Your Results</h2>
+                    <div id = "resultsDiv"> Here they are!!!</div>
+                </section>
+            </main>
     </body>
 
 </html>

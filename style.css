@@ -1,23 +1,70 @@
-/*nav {
-    position: fixed;
-    top: 3.7rem;
-    left: 0;
-    background: yellow;
-    height: 100%
-}*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url("https://use.typekit.net/ril2vdl.css");
+@import url("https://use.typekit.net/ril2vdl.css");
 
-ol {
+/* GENERAL CODE*/
+h1 {
+    font-family: "Rubik Mono One", monospace;
+    font-style: normal;
+    padding: 1.5rem;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: "attribute-mono", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+hr {
+    border: 1px solid rgb(132, 255, 0);
+}
+
+main {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    column-gap: 1.5%;
 }
 
-ol:first-child {
-    grid-template-columns: 2fr, 1fr;
+nav {
+    background: rgb(247, 247, 247);
+    height: 100vh;
+    max-width: 30vw;
 }
 
-ol:nth-child(2) {
-	grid-template-rows: 2fr 1fr;
+div {
+    padding: 1rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+button {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+button:hover {
+    background-color: black;
+    color: white;
 }
 
 .HeadacheClass {
-color: red;
-}
+    color: red;
+    }

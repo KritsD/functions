@@ -1,15 +1,14 @@
 {
+    "symptoms": [
+            {"text": "Headache", "value":"Headache"},
+            {"text": "Sore eyes", "value":"Sore eyes"},
+            {"text": "Blurred vision", "value":"Blurred vision"},
+            {"text": "Shoulder/neck pain", "value":"Shoulder/neck pain"},
+            {"text": "Fatigue", "value":"Fatigue"}
+        ],
 
-
-"availableTime": [
-    {"text": "A minute", "value":"A minute"},
-    {"text": "I have some time", "value":"I have some time"}
-],
-
-"symptoms": [
-    {"text": "Headache", "value":"Headache"},
-    {"text": "Sore Eyes", "value":"Sore Eyes"}
-]
-
-
+    "availableTime": [
+        {"text": "A minute", "value":"A minute"},
+        {"text": "I have some time", "value":"I have some time"}
+    ]
 }
