@@ -47,9 +47,9 @@ function outputSolution(){
                     results.classList.add("HeadacheClass");
                     result = "Close eyes and breathe";
                     break;
-                case "Sore eyes":
-                    result = "Try these exercises";
-                    break;  
+				case "Sore eyes":
+					result = "Blink Try Slowly for 10 seconds";
+					break;  
 				case "Blurred vision":
                     result = "Follow the 20-20-20";
                     break;
@@ -60,15 +60,16 @@ function outputSolution(){
 					result = "Get off screen and rest your eyes!";
 					break; 
             }
-        case "I have some time":
-            switch (dataList2)
-            {
+
+		case "I have some time":
+        	switch (dataList2)
+            	{
                 case "Headache":
                     results.classList.add("SometimeClass");
                     result = "Close eyes and take 5 long deep breaths";
                     break;
                 case "Sore eyes":
-                    result = "Blink Slowly for 10 seconds";
+                    result = "Blink slowly for 10 seconds";
                     break;  
 				case "Blurred vision":
 					result = "Use eye drops or rest your eyes for a few minutes under cucumber slices, cooled chamomile tea bags, or even cold spoons.";

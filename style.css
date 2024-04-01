@@ -30,6 +30,12 @@
         letter-spacing: 1px;
     }
 
+    .SometimeClass,
+    .HeadacheClass {
+        font-size: calc(3 * var(--typography-base));
+        text-align: center;
+    }
+
     nav {
         margin-bottom: 2rem;
         display: grid;
@@ -70,11 +76,12 @@
 h1 {
     font-family: "Rubik Mono One", monospace;
     font-style: normal;
-    padding: 0.5rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 h2, h3, .SometimeClass,
-.HeadacheClass {
+.HeadacheClass  {
     font-family: "attribute-mono", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -117,6 +124,7 @@ button:hover {
 .SometimeClass,
 .HeadacheClass {
     color: rgb(0, 0, 0);
+    padding: 1rem;
 }
 
 #prescription {
