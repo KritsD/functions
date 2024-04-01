@@ -65,28 +65,54 @@ function outputSolution(){
             {
                 case "Headache":
                     results.classList.add("SometimeClass");
-                    result = "Close eyes and breathe";
+                    result = "Close eyes and take 5 long deep breaths";
                     break;
                 case "Sore eyes":
-                    result = "Blink Slowly";
+                    result = "Blink Slowly for 10 seconds";
                     break;  
 				case "Blurred vision":
-					result = "Use eye drops";
+					result = "Use eye drops or rest your eyes for a few minutes under cucumber slices, cooled chamomile tea bags, or even cold spoons.";
 					break;
 				case "Shoulder/neck pain":
-					result = "Neck and shoulder rolls";
+					result = "3 Neck and shoulder rolls in clockwise and anti-clockwise direction";
 					break;  
 				case "Fatigue":
-					result = "Get off screen and rest your eyes!";
+					result = "Rest, get off screen now!";
 					break;   
-            }
-        
-    }
-
+            	}
+    	}
     results.innerHTML = result;
+}
 
-    }
-
+window.onload=function(){
+	var list = document.getElementById("shuffleAndSort"),
+	button = document.getElementById("shuffle");
+	function shuffle(items)
+	{
+		var cached = items.slice(0), temp, i = cached.length, rand;
+		while(--i)
+		{
+			rand = Math.floor(i * Math.random());
+			temp = cached[rand];
+			cached[rand] = cached[i];
+			cached[i] = temp;
+		}
+		return cached;
+	}
+	function shuffleNodes()
+	{
+		var nodes = list.children, i = 0;
+		nodes = Array.prototype.slice.call(nodes);
+		nodes = shuffle(nodes);
+		while(i < nodes.length)
+		{
+			list.appendChild(nodes[i]);
+			++i;
+		}
+	} 
+	document.getElementById("shuffle").onclick = shuffleNodes;
+	
+	} 
 
 
 // Fetch gets your (local) JSON file…

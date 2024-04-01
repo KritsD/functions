@@ -10,31 +10,38 @@
     </head>
 
     <body>
-            <header>
-                <h1>+ eye care +</h1>
-                <hr>
-            </header>
-
             <main>
-                <nav>
-                    <div>
-                        <h2>What are you feeling?</h2>
-                        <button><h3><select id="data-list2"></select><i class="arrow down"></i></h3></button>
-                    </div>
-
-                    <div>
-                        <h2>How much time do you have?</h2>
-                        <button><h3><select id="data-list"></select><i class="arrow down"></i></h3></button>
-                    </div>
+                 <div id="nav">
+                    <h2>Details</h2>
                     <hr>
-                    <div>
-                        <h3><button onclick="outputSolution()">Find me a fix</button></h3>
-                    </div>
-                </nav>
+                    <nav>
+                        <div>
+                            <h3>ONE</h3>
+                            <h2>What are you feeling?</h2>
+                            <button><h2><select id="data-list2"></select><i class="arrow down"></i></h2></button>
+                        </div>
+
+                        <div>
+                            <h3>TWO</h3>
+                            <h2>How much time do you have?</h2>
+                            <button><h2><select id="data-list"></select><i class="arrow down"></i></h2></button>
+                        </div>
+                    </nav>
+                    <hr>
+                        <div>
+                            <h2 id="fixme"><button  onclick="outputSolution()">Find me a fix</button></h2>
+                        </div>
+                </div>
                 
-                <section>
-                    <h2>Your Results</h2>
-                    <div id = "resultsDiv"> Here they are!!!</div>
+                <section> 
+                        <div id="prescription">
+                        <h1>+ eye care +</h1>
+                        <hr>
+                        <div id = "resultsDiv"></div>
+                        </div>
+                    <!--<aside>
+                        <button id="shuffle" type="button">Shuffle</button>
+                    </aside>-->
                 </section>
             </main>
     </body>
