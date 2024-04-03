@@ -30,6 +30,10 @@
         letter-spacing: 1px;
     }
 
+    body {
+        background-color: rgb(225, 225, 225);
+    }
+
     .SometimeClass,
     .HeadacheClass {
         font-size: calc(3 * var(--typography-base));

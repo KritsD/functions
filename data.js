@@ -60,6 +60,7 @@ function outputSolution(){
 					result = "Get off screen and rest your eyes!";
 					break; 
             }
+			break;
 
 		case "I have some time":
         	switch (dataList2)
@@ -81,6 +82,7 @@ function outputSolution(){
 					result = "Rest, get off screen now!";
 					break;   
             	}
+				break;
     	}
     results.innerHTML = result;
 }
