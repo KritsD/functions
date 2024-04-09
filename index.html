@@ -12,36 +12,46 @@
     <body>
             <main>
                  <div id="nav">
-                    <h2>Details</h2>
-                    <hr>
                     <nav>
-                        <div>
-                            <h3>ONE</h3>
-                            <h2>What are you feeling?</h2>
-                            <button><h2><select id="data-list2"></select><i class="arrow down"></i></h2></button>
-                        </div>
+                    <div>
+                        <!--<h3>ONE</h3>-->
+                        <h3><label for="What are you feeling">WHAT ARE YOU FEELING?</label></h3>
+				        <h2><select id="data-list2"></select>
+                        <!--<i class="arrow down"></i>--></h2></button>
+                        <hr>
+                    </div>
 
+                    <div>
+                        <h3><label for="How much time do you have">CHOOSE A TIME</label></h3>
+                        <h2><select id="data-list"></select></i></h2>
+                        <hr>
+                    </div>
+                    
+                    </nav> 
                         <div>
-                            <h3>TWO</h3>
-                            <h2>How much time do you have?</h2>
-                            <button><h2><select id="data-list"></select><i class="arrow down"></i></h2></button>
+                            <h2 id="fixme"><button id="fixmebutton"  onclick="outputSolution()">Find me a fix</button>
+                            </h2>
                         </div>
-                    </nav>
-                    <hr>
-                        <div>
-                            <h2 id="fixme"><button  onclick="outputSolution()">Find me a fix</button></h2>
-                        </div>
-                </div>
+                    </div>
+                </nav>
                 
                 <section> 
                         <div id="prescription">
-                        <h1>+ eye care +</h1>
-                        <hr>
-                        <div id = "resultsDiv"></div>
+                            <div>
+                                <h1 id="resultsHeader"> eye care</h1>
+                                <hr>
+                                <div id="resultsDiv"></div>
+                                <div id="timerprint">
+                                    <div class="timer-container">
+                                    <div id="timer"></div>
+                                    <h3><button id="startStopButton">START TIMER</button></h3></div>
+                                <div id="printcallout">
+                                    <img id="printicon" src="printer.png">
+                                    <h3><button id="printbutton">TAKE A PRINT</button></h3>
+                                </div>
+                                </div>
+                            </div>
                         </div>
-                    <!--<aside>
-                        <button id="shuffle" type="button">Shuffle</button>
-                    </aside>-->
                 </section>
             </main>
     </body>
