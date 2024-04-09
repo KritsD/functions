@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url("https://use.typekit.net/ril2vdl.css");
 @import url("https://use.typekit.net/ril2vdl.css");
+@import url("https://use.typekit.net/ril2vdl.css"); /*unica*/
 
 @media screen {
     :root {
@@ -17,12 +18,12 @@
     --spacing: calc(2 * var(--font-size));
     }
 
-    h1 {
-        font-size: calc(2.5 * var(--typography-base));
+    h1, .p1 {
+        font-size: calc(3 * var(--typography-base));
+        padding: 1rem;
     }
 
-    h2, .SometimeClass,
-    .HeadacheClass {
+    h2 {
         font-size: calc(1.8 * var(--typography-base));
     }
 
@@ -68,8 +69,16 @@
         padding: 1rem;
     }
 
-    .HeadacheClass {
-        padding: 1rem;
+    .p1, .p2 {
+        display:block;
+        margin-bottom: 1px;
+    }
+
+    .p2 {
+        font-size: calc(2 * var(--typography-base));
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        padding-top: 1rem;
     }
 }
 
@@ -93,10 +102,14 @@
     #timerprint {
         padding-bottom: 1rem;
     }
+
+    section {
+        width: 100%;
+    }
 }
 
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
 
     main {
         display: grid;
@@ -121,28 +134,37 @@
     }
 }
 
-/* GENERAL CODE*/
-h1 {
-    font-family: "Rubik Mono One", monospace;
-    font-style: normal;
-    text-align: center;
-    padding: 1rem;
+@media (min-width: 1000px) {
+   #prescription {
+        max-width: 600px;
+        margin: auto;
+    }
 }
 
-h2, h3, .SometimeClass,
-.HeadacheClass, #timer, #startStopButton  {
+
+
+/* GENERAL CODE*/
+h1, .p1 {
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-align: center;
+}
+
+h2, h3, p, #timer, #startStopButton  {
     font-family: "attribute-mono", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.SometimeClass {
-    padding: 1rem;
+.p2 {
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 hr {
     border: 0.5px solid rgb(0, 0, 0);
-    margin-bottom: 1.5rem;
 }
 
 #nav {
