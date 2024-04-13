@@ -24,6 +24,7 @@ const renderItems = (data) => {
 	})
 }
 
+
 function outputSolution(){
 
     const results = document.getElementById('resultsDiv');
@@ -37,26 +38,30 @@ function outputSolution(){
             switch (dataList2) {
                 case "Headache":
                     // results.classList.add("HeadacheClass");
-                    result = "<span class='p1'>blink slowly</span>";
-					result += "<span class='p2'>Blinking several times can help spread the tears across your eyes, reducing burning or sore feelings.</span>";
-					result +="<span class='p2'>Looking straight ahead, close your eyes for half a second, then reopen them. Repeat this 20 times in a row to refresh your eyes and reduce dryness.</span>";
+                    // result = "<span class='p1'> 20-20-20 Rule</span>";
+					result ="<span class='p2'>Get off the screen for 20 seconds. Repeat this 20 times in a row to refresh your eyes and reduce dryness.</span>";
 					toggleTimerVisibility(10);
-					resultsHeader.innerHTML = "headache + a minute";
+					resultsfeelingHeader.innerHTML = "feeling: headache";
+					resultstimeHeader.innerHTML = "time: a minute";
+					resultsremedyHeader.innerHTML = "remedy";
 					break;
 					// result = "Close eyes and breathe <img src='eye.png' alt='Sore Eyes Image'>";
 					// result += "<p>Rest your eyes for 5 minutes and apply a warm compress.</p>";
 				case "Sore eyes":
-					result = "<span class='p1'>Palming the eyes</span>";
-					result += "Palming your eyes has two important effects: first, it requires that your eyes are closed for a while, which is good for eye strain on its own. Second, some studies suggest that it may help your eyes circulate blood and liquid better, helping your eyes recover from hard work more easily.";
-					result +="For 2 minutes, gently cup your palms and place them over your eyes. Make sure you can open and close your eyes freely. Staring and blinking into the darkness can help your vision reset.";
-					resultsHeader.innerHTML = "sore eyes + a minute";
+					result = "<span class='p2'>Palming your eyes has two important effects: first, it requires that your eyes are closed for a while, which is good for eye strain on its own. Second, some studies suggest that it may help your eyes circulate blood and liquid better, helping your eyes recover from hard work more easily.</span>";
+					result +="<span class='p2'>For 2 minutes, gently cup your palms and place them over your eyes. Make sure you can open and close your eyes freely. Staring and blinking into the darkness can help your vision reset.</span>";
+					resultsfeelingHeader.innerHTML = "feeling: headache";
+					resultstimeHeader.innerHTML = "time: a minute";
+					resultsremedyHeader.innerHTML = "remedy";
 					toggleTimerVisibility(10);
 					break;  
 				case "Blurred vision":
-                    result = "<span class='p1'>Follow the 20-20-20 rule</span>";
+                    result ="<span class='p1'>Follow the 20-20-20 rule</span>";
 					result += "Practicing taking breaks by looking away from the screen can help reduce eye tension and pain.";
 					result += "Look at something at least 20 feet away for 20 seconds every 20 minutes.";
-					resultsHeader.innerHTML = "blurred vision + a minute";
+					resultsHeader.innerHTML = "feeling: blurred vision";
+					resultstimeHeader.innerHTML = "time: a minute";
+					resultsremedyHeader.innerHTML = "remedy";
 					toggleTimerVisibility(20);
                     break;
 				case "Shoulder/neck pain":
@@ -65,14 +70,18 @@ function outputSolution(){
 					result += "Head tilt: Sit up straight. Tuck in your chin. Slowly tip your head to the left. Return to the center. Then, tip your head to the right.Repeat 3 times on each side.";
 					result += "Head turn: Sit up straight. Slowly turn your head and look over your left shoulder. Hold for a few seconds. Go back to the center, then repeat to your right.Repeat 3 times on each side.";
 					toggleTimerVisibility(40);
-					resultsHeader.innerHTML = "shoulder/neck pain + a minute";
+					resultsHeader.innerHTML = "feeling: shoulder/neck pain ";
+					resultstimeHeader.innerHTML = "time: a minute";
+					resultsremedyHeader.innerHTML = "remedy";
 					break;  
 				case "Eye Fatigue":
 					result = "<span class='p1'>Flexing the eyes!</span>";
 					result +="Flexing is an eye exercise that stretches and strengthens the occular muscles in the eye. This involves rapid movements up and down, then left and right.";
 					result +="Face forward and look straight ahead. Look up without moving your head and then look down. Repeat this motion 10 times";
 					toggleTimerVisibility(20);
-					resultsHeader.innerHTML = "eye fatigue + a minute";
+					resultsHeader.innerHTML = "feeling: eye fatigue";
+					resultstimeHeader.innerHTML = "time: a minute";
+					resultsremedyHeader.innerHTML = "remedy";
 					break; 
             }
 			break;
@@ -80,32 +89,41 @@ function outputSolution(){
 		case "Some time":
         	switch (dataList2){
                 case "Headache":
-                    results.classList.add("SometimeClass");
                     result = "<span class='p1'>Close your eyes and take 15 long deep breaths</span>";
 					toggleTimerVisibility(120);
-					resultsHeader.innerHTML = "Headache + Sometime";
+					resultsfeelingHeader.innerHTML = "feeling: headache";
+					resultstimeHeader.innerHTML = "time: some time";
+					resultsremedyHeader.innerHTML = "remedy";
                     break;
                 case "Sore eyes":
                     result = "<span class='p1'>A warm compress</span>";
 					result ="The warmth from the compress helps trigger tears while relaxing muscles. This helps relieve eye strain without putting any additional stress on delicate muscles.";
 					result +="Try a washcloth soaked in warm water.Wash your hands before you start so bacteria doesn't get in your eyes. Dip your washcloth in water that you've boiled (to sterilize it) and cooled until lukewarm. Then put it on your eyes for 5-10 minutes, or as long as your doctor advises.";
 					toggleTimerVisibility(600);
-					resultsHeader.innerHTML = "Sore eyes + Sometime";
+					resultsfeelingHeader.innerHTML = "feeling: sore eyes";
+					resultstimeHeader.innerHTML = "time: some time";
+					resultsremedyHeader.innerHTML = "remedy";
                     break;  
 				case "Blurred vision":
 					result = "<span class='p1'>Try cooled chamomile tea bags</span>";
 					result += "After you've brewed chamomile or regular tea, put the bags in a clean container in the fridge. Once they've cooled, put them on your eyelids to help soothe your eyes and reduce swelling. Make sure you've washed your face and hands well and taken out your contacts. And don't get any tea in your eyes.";
 					toggleTimerVisibility(600);
-					resultsHeader.innerHTML = "Blurred vision + Sometime";
+					resultsfeelingHeader.innerHTML = "feeling: blurred vision";
+					resultstimeHeader.innerHTML = "time: some time";
+					resultsremedyHeader.innerHTML = "remedy";
 					break;
 				case "Shoulder/neck pain":
 					result = "<span class='p1'>Adjust your screen</span>";
 					result += "Make sure your screen is about arm's length (20-26 inches) away from your face. The center of the screen should be slightly below eye level (4-5 inches). It helps to have a chair you can move up and down Adjust the text size so you don't squint. And try a document holder next to your monitor for printed papers. This limits how much you move your eyes back and forth.";
-					resultsHeader.innerHTML = "Shoulder/neck pain + Sometime";
+					resultsfeelingHeader.innerHTML = "feeling: shoulder/neck pain";
+					resultstimeHeader.innerHTML = "time: some time";
+					resultsremedyHeader.innerHTML = "remedy";
 					break;  
-				case "Fatigue":
+				case "Eye Fatigue":
 					result = "<span class='p1'>Take a screen break, rest your eyes for several minutes</span>";
-					resultsHeader.innerHTML = "Fatigue + Sometime";
+					resultsfeelingHeader.innerHTML = "feeling: eye fatigue";
+					resultstimeHeader.innerHTML = "time: some time";
+					resultsremedyHeader.innerHTML = "remedy";
 					break;   
             	}
 				break;

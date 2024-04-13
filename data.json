@@ -1,10 +1,12 @@
 {
     "availableTime": [
+        {"text": "Choose", "value":"Choose"},
         {"text": "A minute", "value":"A minute"},
         {"text": "Some time", "value":"Some time"}
     ],
 
     "symptoms": [
+            {"text": "Choose", "value":"Choose"},
             {"text": "Headache", "value":"Headache"},
             {"text": "Sore eyes", "value":"Sore eyes"},
             {"text": "Blurred vision", "value":"Blurred vision"},

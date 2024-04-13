@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url("https://use.typekit.net/ril2vdl.css");
 @import url("https://use.typekit.net/ril2vdl.css");
-@import url("https://use.typekit.net/ril2vdl.css"); /*unica*/
 
 @media screen {
     :root {
@@ -18,18 +16,24 @@
     --spacing: calc(2 * var(--font-size));
     }
 
-    h1, .p1 {
+    h1 {
         font-size: calc(3 * var(--typography-base));
-        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top:1rem;
     }
 
     h2 {
         font-size: calc(1.8 * var(--typography-base));
     }
 
-    h3 {
+    h3, .p1 {
         font-size: calc(1.5 * var(--typography-base));
         letter-spacing: 1px;
+    }
+
+    .p2 {
+        font-size: calc(1.5 * var(--typography-base));
     }
 
     body {
@@ -40,18 +44,31 @@
         margin-bottom: 1rem;
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 1.5rem;
+        row-gap: 0.5rem;
     }
 
     #nav {
         border: 1px solid black;
     }
 
+    div {
+        margin:0.5rem;
+    }
+
+    #fixme {
+        margin-top: 0.5rem;
+    }
+
     #fixmebutton {
         width: 100%;
         text-align: center;
-        text-transform: uppercase;
         letter-spacing: 1;
+        background-color: rgb(255, 243, 185);
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    #fixmebutton:hover {
+        color:rgb(0, 0, 0);
     }
 
     #nameage {
@@ -61,8 +78,9 @@
         padding-bottom: 1rem;
     }
 
-    #shuffleButton /*, #printcallout*/ {
-        display: none;
+    #prescription {
+        max-width: 100%;
+        margin: auto;
     }
 
     #timerprint {
@@ -74,37 +92,37 @@
         margin-bottom: 1px;
     }
 
-    .p2 {
-        font-size: calc(2 * var(--typography-base));
-        margin-left: 0.8rem;
-        margin-right: 0.8rem;
-        padding-top: 1rem;
+    #resultsDiv {
+        max-width: 100%;
     }
 }
 
 @media (min-width: 483px) {
 
     nav {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 2rem;
     }
 
     #nav {
-        margin: auto;
-    }
-
-    div {
-        margin: 1rem;
+       
+        padding: 0.5rem;
     }
 
     #timerprint {
         padding-bottom: 1rem;
     }
 
-    section {
-        width: 100%;
+    .p2 {
+        font-size: calc(1.3 * var(--typography-base));
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    #resultsDiv {
+        max-width: 95%;
     }
 }
 
@@ -121,16 +139,27 @@
         margin-bottom: 2rem;
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 1.5rem;
     }
 
     #nav {
+        margin: auto;
         border-right: 1px solid black;
     }
 
-    div {
-        margin: 0rem;
-        padding: 0rem;
+    #prescription {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .p2 {
+        font-size: calc(1.6 * var(--typography-base));
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    #resultsDiv {
+        max-width: 80%;
     }
 }
 
@@ -139,27 +168,26 @@
         max-width: 600px;
         margin: auto;
     }
+
+    .p2 {
+        font-size: calc(1.8 * var(--typography-base));
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    #resultsDiv {
+        max-width: 80%;
+    }
 }
 
 
 
 /* GENERAL CODE*/
-h1, .p1 {
-    font-family: "neue-haas-unica", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    text-align: center;
-}
 
-h2, h3, p, #timer, #startStopButton  {
+h1, .p1, h2, h3, #timer, #startStopButton, .p2  {
     font-family: "attribute-mono", sans-serif;
     font-weight: 400;
-    font-style: normal;
-}
-
-.p2 {
-    font-family: "neue-haas-unica", sans-serif;
-    font-weight: 300;
     font-style: normal;
 }
 
@@ -169,32 +197,37 @@ hr {
 
 #nav {
     background: rgb(255, 243, 185);
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 button {
     display: inline-block;
-    border: 1px solid black;
+    background-color: black;
+    border: 1px solid rgb(255, 243, 185);
     padding: 0.5rem;
-    border-radius: 10px;
     cursor: pointer;
 }
 
-.arrow {
-    border: solid black;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 5px;
+button:hover {
+    background-color: rgb(255, 243, 185);
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
+#data-list, #data-list2 {
+    border: 1px solid black;
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+    width: 100%;
+}
 
-button:hover {
-    background-color: black;
-    color: white;
+#grid {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
 }
 
 #prescription {
@@ -203,12 +236,45 @@ button:hover {
     margin: 2rem;
     display: grid;
     grid-template-rows: 2fr 2fr;
-    border: 1px solid black;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    background-color: rgb(255, 243, 185);
+}
+
+#address {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#logosize {
+    max-width: 36px;
+    align-items: center;
+    justify-self: end;
+    margin-right: 1rem;
+}
+
+#resultsfeelingHeader, #resultstimeHeader {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+#resultsremedyHeader {
+    padding-left: 1rem;
+    margin-top: 1.5rem;
 }
 
 #timerprint {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    margin: auto;
 }
 
 #printcallout {
@@ -236,4 +302,6 @@ button:hover {
 #startStopButton, #printbutton {
     padding: 10px 20px;
     cursor: pointer;
+    background-color: rgb(255, 243, 185);
+    border: 1px solid rgb(0, 0, 0);
   }
