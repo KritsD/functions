@@ -27,13 +27,15 @@
         font-size: calc(1.8 * var(--typography-base));
     }
 
-    h3, .p1 {
+    h3, .p1, .p2 {
         font-size: calc(1.5 * var(--typography-base));
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
     }
 
     .p2 {
-        font-size: calc(1.5 * var(--typography-base));
+        margin-left: 0.6rem;
+        margin-right: 0.5rem;
+        padding-top: 1rem;
     }
 
     body {
@@ -48,7 +50,12 @@
     }
 
     #nav {
-        border: 1px solid black;
+        background: rgb(255, 243, 185);
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border: 1px solid rgb(211, 211, 211);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     div {
@@ -71,20 +78,23 @@
         color:rgb(0, 0, 0);
     }
 
+    /* COME BACK TO THISSSS ----->>>>
     #nameage {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-left: 1rem;
         padding-bottom: 1rem;
-    }
+    }*/
 
     #prescription {
-        max-width: 100%;
         margin: auto;
-    }
-
-    #timerprint {
-        padding: 1rem;
+        background: rgb(255, 255, 255);
+        height: 90vh;
+        margin: 2rem;
+        display: grid;
+        grid-template-rows: 2fr 2fr;
+        border: 1px solid rgb(211, 211, 211);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
     }
 
     .p1, .p2 {
@@ -94,6 +104,15 @@
 
     #resultsDiv {
         max-width: 100%;
+    }
+
+}
+
+@media (min-width: 325px) {
+    #grid {
+        display: grid;
+        grid-template-rows: 1fr;
+        margin-bottom: 1rem;
     }
 }
 
@@ -106,19 +125,11 @@
     }
 
     #nav {
-       
         padding: 0.5rem;
     }
 
     #timerprint {
         padding-bottom: 1rem;
-    }
-
-    .p2 {
-        font-size: calc(1.3 * var(--typography-base));
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding-top: 1rem;
     }
 
     #resultsDiv {
@@ -127,7 +138,7 @@
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
 
     main {
         display: grid;
@@ -136,26 +147,36 @@
     }
 
     nav {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         display: grid;
         grid-template-columns: 1fr;
     }
 
     #nav {
         margin: auto;
-        border-right: 1px solid black;
+        padding-top: 1.2rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
 
     #prescription {
         max-width: 600px;
-        margin: auto;
     }
 
-    .p2 {
-        font-size: calc(1.6 * var(--typography-base));
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding-top: 1rem;
+    #resultsDiv {
+        max-width: 80%;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 9fr 1fr;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1000px) {
+   #prescription {
+        max-width: 550px;
     }
 
     #resultsDiv {
@@ -163,21 +184,42 @@
     }
 }
 
-@media (min-width: 1000px) {
-   #prescription {
-        max-width: 600px;
-        margin: auto;
+@media print {
+
+    :root {
+        --typography-base: 0.5rem;
+    }
+
+    h1 {
+        font-size: calc(5 * var(--typography-base));
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top:1rem;
+    }
+
+    h2 {
+        font-size: calc(2.6 * var(--typography-base));
+    }
+
+    h3, .p1, .p2 {
+        font-size: calc(2.3 * var(--typography-base));
+        letter-spacing: 0.5px;
     }
 
     .p2 {
-        font-size: calc(1.8 * var(--typography-base));
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding-top: 1rem;
+        padding-left: 1rem;
     }
 
-    #resultsDiv {
-        max-width: 80%;
+    #nav, #printbutton, .timer-container, #timer, #startStopButton {
+        display: none;
+    }
+
+    #prescription {
+        width: 100%;
+    }
+
+    #allcontent {
+        width: 80vh;
     }
 }
 
@@ -195,19 +237,10 @@ hr {
     border: 0.5px solid rgb(0, 0, 0);
 }
 
-#nav {
-    background: rgb(255, 243, 185);
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border: 1px solid rgb(211, 211, 211);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
 button {
     display: inline-block;
-    background-color: black;
-    border: 1px solid rgb(255, 243, 185);
+    background-color: rgb(255, 243, 185);
+    border: 1px solid black;
     padding: 0.5rem;
     cursor: pointer;
 }
@@ -225,27 +258,11 @@ button:hover {
     width: 100%;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: 10fr 1fr;
-}
-
-#prescription {
-    background: rgb(255, 255, 255);
-    height: 90vh;
-    margin: 2rem;
-    display: grid;
-    grid-template-rows: 2fr 2fr;
-    border: 1px solid rgb(211, 211, 211);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
-}
-
 #logo {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
     margin-bottom: 1rem;
-    margin-top: 1.2rem;
     background-color: rgb(255, 243, 185);
 }
 
@@ -271,22 +288,18 @@ button:hover {
     margin-top: 1.5rem;
 }
 
-#timerprint {
+/*#timerprint {
     display: grid;
     grid-template-columns: 2fr 2fr;
     margin: auto;
-}
-
-#printcallout {
-    text-align: center;
-    margin: auto;
-}
+}*/
 
 #printicon {
     display: block;
     margin: auto;
     max-width: 18px;
-    padding-bottom: 1.1rem;
+    align-items: center;
+   
 }
 
 /*Timer*/
@@ -297,11 +310,16 @@ button:hover {
 #timer {
     padding-bottom: 1rem;
     margin: auto;
-  }
+}
   
 #startStopButton, #printbutton {
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
     background-color: rgb(255, 243, 185);
     border: 1px solid rgb(0, 0, 0);
-  }
+}
+
+#printdiv {
+    margin: auto;
+}
+  
