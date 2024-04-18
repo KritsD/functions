@@ -24,6 +24,10 @@ const renderItems = (data) => {
 	})
 }
 
+function handleButtonClick() {
+    outputSolution(); // Call the first function
+    toggleMenu(); // Call the second function
+}
 
 function outputSolution(){
 
@@ -122,6 +126,17 @@ function outputSolution(){
     	}
     results.innerHTML = result;
 }
+
+function toggleMenu(){
+
+	if(document.getElementById("grid").style.right == "0px")
+   {document.getElementById("grid").style.right ="-630px"
+  
+  }
+   else{
+   document.getElementById("grid").style.right = "0px"
+  }
+}
 	
 // Fetch gets your (local) JSON file…
 fetch('data.json')
@@ -130,7 +145,6 @@ fetch('data.json')
 		// And passes the data to the function, above!
 		renderItems(data)
 	})
-
 
 //**** Timer related functions */	
 

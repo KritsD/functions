@@ -10,58 +10,65 @@
     </head>
 
     <body>
-            <main>
-                <div id="nav">
-                    <nav>
-                        <div>
-                            <h3>WHAT ARE YOU FEELING?*</h3>
-                            <h2><select id="data-list2"></select></h2>
-                        </div>
+        <main>
+            <div id="nav">
+                <nav>
+                    <div>
+                        <h3><button><a href="index.html">EYE CARE +</button></h3>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>WHAT ARE YOU FEELING?*</h3>
+                        <h2><select id="data-list2"></select></h2>
+                    </div>
 
-                        <div>
-                            <h3>CHOOSE TIME*</h3>
-                            <h2><select id="data-list"></select></h2>
-                        </div>
+                    <div>
+                        <h3>CHOOSE TIME*</h3>
+                        <h2><select id="data-list"></select></h2>
+                    </div>
 
-                        <div id="fixme">
-                            <h3><button id="fixmebutton" onclick="outputSolution()">FIND ME A FIX</button>
-                            </h3>
-                        </div>
-                    </nav>
-                </div>
-                
-                <section id="grid"> 
-                        <div id="prescription">
-                            <div id="allcontent">
-                                <div id="logo">
-                                    <div>
-                                    <h1>Eye care </h1>
-                                    <h2 id="address"> 108 W, New York, 11111</h2>
-                                    </div>
-                                    <img id="logosize" src="logo.png">
-                                </div>
-                                
-                                <h3 id="resultsfeelingHeader">symptom:</h3>
-                                <h3 id="resultstimeHeader">time:</h3>
-                                <h3 id="resultsremedyHeader">remedy:</h3>
-                                
-                                <div id="resultsDiv"></div>
-                                <div class="timer-container">
-                                    <div id="timer"></div>
-                                    <h3><button id="startStopButton">START TIMER</button></h3></div>
-                                </div> 
-                            </div>   
-                        </div>
-                        <div id="gridwithbuttons">
-                                <div>
-                                <button id="printbutton"><img class="imgsize" src="printer.png"></button><!--id="printicon"-->
-                                </div>
-                                <div>
-                                <h3><button id="eyebutton"><img class="imgsize" src="EYE333.png"></button></h3>
+                    <div id="fixme">
+                        <h3><button id="fixmebutton" onclick="handleButtonClick()">FIND ME A FIX</button></h3>
+                    </div>
+                </nav>
+            </div>
+
+            <section id="grid"> 
+                <div id="prescription">
+                    <div id="allcontent">
+                        <div id="logo">
+                            <div>
+                                <h1>Eye care </h1>
+                                <h2 id="address"> 108 W, New York, 11111</h2>
                             </div>
+                                <img id="logosize" src="logo.png">
                         </div>
-                </section>
-            </main>
+                                
+                            <h3 id="resultsfeelingHeader">symptom:</h3>
+                            <h3 id="resultstimeHeader">time:</h3>
+                            <h3 id="resultsremedyHeader">remedy:</h3>
+                                
+                            <div id="resultsDiv">
+                                <div class="timer-container">
+                                    <div id="timer"></div>                                
+                                    <h3><button id="startStopButton">START TIMER</button></h3>
+                                </div>
+                            </div> 
+                    </div>   
+                </div>
+                        
+                <div id="gridwithbuttons">
+                    <div>
+                        <button id="printbutton"><img class="imgsize" src="printer.png"></button><!--id="printicon"-->
+                    </div>
+                    <div>
+                        <h3><button id="eyebutton"><img class="imgsize" src="EYE333.png"></button></h3>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 
 </html>
+
+<!--onclick="outputSolution()" onClick="toggleMenu()"-->
