@@ -248,6 +248,11 @@ hr {
     margin: 0.4rem;
 }
 
+#title {
+    text-align:center;
+    text-decoration: underline;
+}
+
 button {
     display: inline-block;
     background-color: rgb(249, 253, 2);
@@ -394,7 +399,6 @@ body, html {
     position: relative;
     z-index: -5;
     transition: right .5s;
-    overflow: hidden;
    }
    
    .slider {

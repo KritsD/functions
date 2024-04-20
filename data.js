@@ -129,12 +129,12 @@ function outputSolution(){
 
 function toggleMenu(){
 
-	if(document.getElementById("grid").style.right == "0px")
-   {document.getElementById("grid").style.right ="-630px"
+	if(document.getElementById("grid").style.right == "0%")
+   {document.getElementById("grid").style.right ="-100%"
   
   }
    else{
-   document.getElementById("grid").style.right = "0px"
+   document.getElementById("grid").style.right = "0%"
   }
 }
 	
