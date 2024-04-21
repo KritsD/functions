@@ -4,6 +4,87 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="reset.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <!-- <script defer src="data.json"></script> -->
+        <script defer src="data.js"></script>
+        <title>Eye Strain</title>
+    </head>
+
+    <body>
+        <main>
+            <div id="nav">
+                <div>
+                    <h1 id="title">EYE CARE</h1>
+                </div>
+                <hr>
+                <nav>
+                    <div>
+                        <h3>WHAT ARE YOU FEELING?*</h3>
+                        <h2><select onchange="whenlistchange()" id="data-list2"></select></h2>
+                    </div>
+
+                    <div>
+                        <h3>CHOOSE TIME*</h3>
+                        <h2><select onchange="whenlistchange()" id="data-list"></select></h2>
+                    </div>
+
+                    <div id="fixme">
+                        <h3><button id="fixmebutton" onclick="handleButtonClick()">FIND ME A FIX</button></h3>
+                    </div>
+
+                    <div id="warning"><h3>REQUIRED*</h3></div>
+                </nav>
+                <hr>
+                <div id="gridwithbuttons">
+                    <div>
+                        <button id="printbutton"><img class="imgsize" src="printer.png"></button>
+                    </div>
+                </div>
+            </div>
+
+            <section id="grid"> 
+                <div id="prescription">
+                    <div id="allcontent">
+                        <div id="logo">
+                            <div id="address">
+                                <h1>FIX MY EYES </h1>
+                                <h2> 108 W, New York, 11111</h2>
+                                <h2> +1 123 12X 1233</h2>
+                            </div>
+                                <img id="logosize" src="logo.png">
+                        </div>
+                        <div>
+                            <hr>
+                            <div id="formspacing">
+                                <h3 id="resultsfeelingHeader">symptom:</h3>
+                                <h3 id="resultstimeHeader">time:</h3>
+                                <h3 id="resultsremedyHeader">remedy:</h3>
+                            </div>
+                            <hr> 
+                            <div id="resultsDiv">
+                                <!-- <div class="timer-container">
+                                    <div id="timer"></div>                                
+                                    <h3><button id="startStopButton">START TIMER</button></h3> 
+                                </div>-->
+                            </div> 
+                        </div>
+                            <div id="signature">
+                                <img id="signsize" src="signature.png">
+                                <h3 id="lineabovesign">Doctor Signature</h3>
+                            </div>   
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
+
+<!-- OLD SHIIIIIIIIIIZ -->
+<!-- <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <script defer src="data.json"></script>
         <script defer src="data.js"></script>
         <title>Eye Strain</title>
@@ -18,12 +99,12 @@
                 <nav>
                     <div>
                         <h3>WHAT ARE YOU FEELING?*</h3>
-                        <h2><select id="data-list2"></select></h2>
+                        <h2><select onchange="whenlistchange()" id="data-list2"></select></h2>
                     </div>
 
                     <div>
                         <h3>CHOOSE TIME*</h3>
-                        <h2><select id="data-list"></select></h2>
+                        <h2><select onchange="whenlistchange()" id="data-list"></select></h2>
                     </div>
 
                     <div id="fixme">
@@ -58,8 +139,8 @@
 
                 <div id="gridwithbuttons">
                     <div>
-                        <button id="printbutton"><img class="imgsize" src="printer.png"></button><!--id="printicon"-->
-                    </div>
+                        <button id="printbutton"><img class="imgsize" src="printer.png"></button> id="printicon"-->
+                    <!-- </div>
                     <div>
                         <h3><button id="eyebutton"><img class="imgsize" src="EYE333.png"></button></h3>
                     </div>
@@ -67,7 +148,4 @@
             </section>
         </main>
     </body>
-
-</html>
-
-<!--onclick="outputSolution()" onClick="toggleMenu()"-->
+</html> -->

@@ -17,24 +17,29 @@
     }
 
     h1 {
-        font-size: calc(3 * var(--typography-base));
-        padding-left: 1rem;
+        font-size: calc(3.5 * var(--typography-base));
+        padding-left: 0.5rem;
         padding-right: 1rem;
-        padding-top:1rem;
     }
 
     h2 {
-        font-size: calc(1.8 * var(--typography-base));
+        font-size: calc(2 * var(--typography-base));
     }
 
     h3, .p1, .p2 {
-        font-size: calc(1.5 * var(--typography-base));
-        letter-spacing: 0.5px;
+        font-size: calc(2 * var(--typography-base));
+        letter-spacing: 0.3px;
     }
 
     .p2 {
         margin-left: 0.6rem;
         margin-right: 0.5rem;
+    }
+
+    h1, .p1, h2, h3, #timer, #startStopButton, .p2  {
+        font-family: "attribute-mono", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     body {
@@ -88,13 +93,54 @@
         padding-bottom: 1rem;
     }*/
 
+    /*sliderrrr*/
+#grid {
+    margin:auto;
+    margin-top: 0px;
+    /*width: 100vw;*/
+    height: 100vh;
+    right: -100%;
+    position: relative;
+    z-index: -5;
+    transition: right ease .5s;
+}
+   
+ /*  .slider {
+      border: none;
+      background-color: white;
+      height: 3px;
+      width: 45px;
+      margin-top: 10px;
+      border-radius:15px;
+   }*/
+   
+   /*#slideButton {
+     border: 0;
+     margin-top: 12px;
+     margin-left: 15px;
+     padding-right: 7px;
+     padding-top: 7px;
+     position: fixed;
+     border-radius: 5px;
+     padding-left: 18px;
+   }*/
+   
+   /*#slideButton:focus {
+      outline: none;
+   }*/
+   
+   /*#slideButton:hover {
+      background-color: rgb(43, 43, 41);
+      transition: ease 0.6s;
+   }*/
+
     #prescription {
         margin: auto;
         background: rgb(255, 255, 255);
         height: 90vh;
         margin: 2rem;
         display: grid;
-        grid-template-rows: 2fr 2fr;
+        grid-template-rows: 1fr 1fr;
         border: 1px solid rgb(211, 211, 211);
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
     }
@@ -104,14 +150,42 @@
         margin-bottom: 1px;
     }
 
+    #logo {
+        display: grid;
+        align-self: center;
+    }
+
+    #logosize {
+        max-width: 20px;
+        justify-self:center;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    #address {
+        display: none;
+    }
+
     #resultsDiv {
         max-width: 100%;
+    }
+
+    #signature {
+        display:none;
     }
 
     #gridwithbuttons {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    #warning {
+        color:rgb(0, 0, 0);
+        display: none;
+        background-color: yellow;
+        text-align: center;
+        margin: auto;
     }
 }
 
@@ -120,6 +194,11 @@
         display: grid;
         grid-template-rows: 1fr;
         margin-bottom: 1rem;
+        margin: auto;
+    }
+
+    #logosize {
+        max-width: 30px;
     }
 }
 
@@ -135,12 +214,12 @@
         padding: 0.5rem;
     }
 
-    #timerprint {
-        padding-bottom: 1rem;
-    }
-
     #resultsDiv {
         max-width: 95%;
+    }
+
+    #logosize {
+        max-width: 40px;
     }
 }
 
@@ -156,7 +235,7 @@
     nav {
         margin-bottom: 1rem;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     #nav {
@@ -174,10 +253,9 @@
         max-width: 80%;
     }
 
-    #grid {
+    #formspacing {
         display: grid;
-        grid-template-columns: 9fr 2fr;
-        align-items: center;
+        grid-template-columns: auto auto auto;
     }
 
     #gridwithbuttons {
@@ -187,12 +265,26 @@
 }
 
 @media (min-width: 1000px) {
-   #prescription {
-        max-width: 550px;
+   
+    h1 {
+        font-size: calc(2.8 * var(--typography-base));
+        letter-spacing:1.2;
+    }
+
+    h2 {
+        font-size: calc(2.1 * var(--typography-base));
+    }
+
+    h3, .p1, .p2 {
+        font-size: calc(2.1 * var(--typography-base));
+        letter-spacing: 0.2px;
+        margin-left: 0.5rem;
     }
 
     #resultsDiv {
         max-width: 80%;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -203,7 +295,8 @@
     }
 
     h1 {
-        font-size: calc(5 * var(--typography-base));
+        font-size: calc(4 * var(--typography-base));
+        letter-spacing: 1.2;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top:1rem;
@@ -213,25 +306,77 @@
         font-size: calc(2.6 * var(--typography-base));
     }
 
-    h3, .p1, .p2 {
+    h3, .p2 {
         font-size: calc(2.3 * var(--typography-base));
-        letter-spacing: 0.5px;
+        letter-spacing: 0.3px;
     }
 
-    .p2 {
-        padding-left: 1rem;
+    h1, .p1, h2, h3, #timer, #startStopButton, .p2  {
+        font-family: "attribute-mono", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     #nav, #printbutton, .timer-container, #timer, #startStopButton, #gridwithbuttons {
         display: none;
     }
 
-    #prescription {
-        width: 100%;
+    #allcontent, #grid, #prescription, section {
+        width: 100vw;
+        margin: 0;
+    }
+
+    #grid {
+        border: 2px solid black;
     }
 
     #allcontent {
-        width: 80vh;
+        padding: 1rem;
+    }
+
+    #resultsDiv {
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       padding-left: 1rem;
+    }
+
+    #formspacing {
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #logo {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+    }
+
+    #logosize {
+        max-width: 100px;
+        align-items: center;
+        justify-self: end;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    #signature {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20px;
+        margin-left: 1rem;
+    }
+
+    #signsize {
+        height: 50px;
+        object-fit: contain;
+        display: block;
+        justify-content:center;
+        margin-bottom: 0.2rem;
+    }
+
+    #lineabovesign {
+        text-decoration: overline;
     }
 }
 
@@ -245,26 +390,29 @@ h1, .p1, h2, h3, #timer, #startStopButton, .p2  {
 
 hr {
     border: 0.5px solid rgb(0, 0, 0);
-    margin: 0.4rem;
+    margin: 0.5rem;
 }
 
 #title {
     text-align:center;
-    text-decoration: underline;
+    letter-spacing:1.2;
 }
 
 button {
     display: inline-block;
-    background-color: rgb(249, 253, 2);
     border: 1px solid black;
     padding: 0.5rem;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(249, 253, 2);
+    background-color: rgb(2, 194, 253);
     border: 1px solid black;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+#gridwithbuttons{
+    display: none;
 }
 
 #data-list, #data-list2 {
@@ -274,30 +422,30 @@ button:hover {
     width: 100%;
 }
 
-#logo {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    margin-bottom: 1rem;
-    background-color: rgb(255, 243, 185);
-}
-
 #address {
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
-#logosize {
-    max-width: 36px;
+/* #logo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+} */
+
+/* #logosize {
+    max-width: 100px;
     align-items: center;
     justify-self: end;
-    margin-right: 1rem;
-}
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+} */
 
-#eye {
+/* #eye {
     max-width: 20px;
     align-items: center;
-    }
+    } */
 
 #resultsfeelingHeader, #resultstimeHeader, #resultsremedyHeader {
     padding-left: 1rem;
@@ -309,7 +457,12 @@ button:hover {
     margin: auto;
     max-width: 18px;
     align-items: center;
-   
+}
+
+#printbutton {
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
 /*Timer*/
@@ -340,6 +493,7 @@ button:hover {
     object-fit: contain;
 }
 
+
 /*eye code*/
 body, html {
     height: 100%;
@@ -356,13 +510,13 @@ body, html {
     z-index: 9999;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s, visibility 0s linear 0.5s;
+    transition: opacity 0.5s, visibility 0s linear 0s;
   }
   
   #overlay.active {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.5s, visibility 0s;
+    transition: opacity 0s, visibility 0s;
   }
   
   .slide-box {
@@ -370,7 +524,7 @@ body, html {
     width: 100%;
     height: 50%;
     background-color: black;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0s ease-in-out;
   }
   
   .top {
@@ -387,45 +541,3 @@ body, html {
     left: 20px;
     z-index: 10000;
   }
-  
-/*overlay*/
-#grid {
-    margin: 0;
-    margin-top: 0px;
-    /*width: 100vw;*/
-    height: 100vh;
-    background-color: #333333;
-    right: -100%;
-    position: relative;
-    z-index: -5;
-    transition: right .5s;
-   }
-   
-   .slider {
-      border: none;
-      background-color: white;
-      height: 3px;
-      width: 45px;
-      margin-top: 10px;
-      border-radius:15px;
-   }
-   
-   #slideButton {
-     border: 0;
-     margin-top: 12px;
-     margin-left: 15px;
-     padding-right: 7px;
-     padding-top: 7px;
-     position: fixed;
-     border-radius: 5px;
-     padding-left: 18px;
-   }
-   
-   #slideButton:focus {
-      outline: none;
-   }
-   
-   #slideButton:hover {
-      background-color: rgb(43, 43, 41);
-      transition: ease 0.6s;
-   }
