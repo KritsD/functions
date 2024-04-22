@@ -37,18 +37,11 @@
         margin-right: 0.5rem;
     }
 
-    /* body {
-        /* background-color: #ffe6d4; */
-        /* overflow: hidden; */
-        /* background-image: url('ghj.png'); 
-    } */
-
     body {
         cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👁️</text></svg>") 16 0,auto;
     }
 
     body {
-        /* background-color: #ffe6d4; */
         background: rgb(255,187,150);
         background: linear-gradient(152deg, rgba(255,187,150,1) 0%, rgba(255,230,212,1) 58%, rgba(255,209,181,1) 100%);
     }
@@ -58,7 +51,6 @@
         margin-bottom: 1rem;
         display: grid;
         grid-template-columns: 1fr;
-        /*row-gap: 0.5rem;*/
     }
 
     #nav {
@@ -99,77 +91,22 @@
         color: #211e1d;
     }
 
-    /* COME BACK TO THISSSS -- NOPE----->>>>
-    #nameage {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-    }*/
-
     /*sliderrrr*/
-#grid {
-    /* display: none; */
-    margin:auto;
-    margin-top: 0px;
-    width: 90%;
-    height: 90vh;
-    right: -100%;
-    position: relative;
-    z-index: 10;
-    transition: right 2s ease;
-    /* transition: right 1s ease-in; */
-    /* animation: slideLeft 3s ease-in-out forwards; */
+    #grid {
+        margin:auto;
+        margin-top: 0px;
+        width: 90%;
+        height: 90vh;
+        right: -100%;
+        position: relative;
+        z-index: 10;
+        transition: right 2s ease;
 }
-
-/* #grid.open {
-    right:0;
-} */
-
-/* @keyframes slideLeft {
-    0% {
-        transform: translateX(3000px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-} */
-   
- /*  .slider {
-      border: none;
-      background-color: white;
-      height: 3px;
-      width: 45px;
-      margin-top: 10px;
-      border-radius:15px;
-   }*/
-   
-   /*#slideButton {
-     border: 0;
-     margin-top: 12px;
-     margin-left: 15px;
-     padding-right: 7px;
-     padding-top: 7px;
-     position: fixed;
-     border-radius: 5px;
-     padding-left: 18px;
-   }*/
-   
-   /*#slideButton:focus {
-      outline: none;
-   }*/
-   
-   /*#slideButton:hover {
-      background-color: rgb(43, 43, 41);
-      transition: ease 0.6s;
-   }*/
 
     #prescription {
         margin: auto;
         background: #ffffff;
         height: 90vh;
-        /* width: 100%; */
         display: grid;
         grid-template-rows: 1fr;
         border: 1px solid rgb(211, 211, 211);
@@ -207,14 +144,6 @@
         display:none;
     }
 
-    /* #gridwithbuttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 0.5rem;
-        margin-top: 1rem;;
-    } */
-
     #warning {
         color:rgb(255, 255, 255);
         display: none;
@@ -225,27 +154,9 @@
         margin-top: 0.5rem;;
     }
 
-    /* footer {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        align-items:center;
-        position: absolute;
-        bottom:0;
-        border-top: 1px solid black;
-    } */
 }
 
 @media (min-width: 325px) {
-    /* #grid {
-        display: grid;
-        grid-template-rows: 1fr;
-        margin-bottom: 1rem;
-        margin: auto;
-    } */
-
-    /* #logosize {
-        max-width: 50px;
-    } */
 
     h1 {
         font-size: calc(3.5 * var(--typography-base));
@@ -268,8 +179,7 @@
     .p2 {
         font-size: calc(2.1 * var(--typography-base));
         letter-spacing: -0.2px;
-        line-height: calc(3.1 * var(--typography-base));;
-        /* margin-left: 0.5rem; */
+        line-height: calc(3.1 * var(--typography-base));
     }
 
     .p2 {
@@ -305,7 +215,6 @@
         font-size: calc(2.3 * var(--typography-base));
         letter-spacing: -0.2px;
         line-height: calc(3.3 * var(--typography-base));;
-        /* margin-left: 0.5rem; */
     }
 
     nav {
@@ -320,20 +229,6 @@
 
     #resultsDiv {
         max-width: 95%;
-    }
-/* 
-    #logosize {
-        max-width: 40px;
-    } */
-
-    footer {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        align-items:center;
-        position: absolute;
-        bottom:0;
-        border-top: 1px solid black;
-        width: 100%;
     }
 }
 
@@ -362,7 +257,6 @@
         font-size: calc(2.7 * var(--typography-base));
         letter-spacing: -0.2px;
         line-height: calc(3.7 * var(--typography-base));;
-        /* margin-left: 0.5rem; */
     }
 
     main {
@@ -382,18 +276,12 @@
         padding: 1.2rem;
     }
 
-    /* .centeralign {
-        text-align: center;
-        font-size: calc(1.4 * var(--typography-base));
-    } */
-
     #grid {
         margin: 2rem;
     }
 
     #prescription {
         margin-top: 0rem;
-        /* max-width: 600px; */
     }
 
     #resultsDiv {
@@ -429,8 +317,7 @@
     .p2 {
         font-size: calc(2.7 * var(--typography-base));
         letter-spacing: -0.2px;
-        line-height: calc(3.7 * var(--typography-base));;
-        /* margin-left: 0.5rem; */
+        line-height: calc(3.7 * var(--typography-base));
     }
 
     #resultsDiv {
@@ -593,26 +480,6 @@ button:hover {
     margin-bottom: 1rem;
 }
 
-/* #logo {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-} */
-
-/* #logosize {
-    max-width: 100px;
-    align-items: center;
-    justify-self: end;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-} */
-
-/* #eye {
-    max-width: 20px;
-    align-items: center;
-    } */
-
 #resultsfeelingHeader, #resultstimeHeader, #resultsremedyHeader {
     padding-left: 1rem;
     margin-top: 0.5rem;
@@ -634,17 +501,6 @@ button:hover {
     width: 100%;
 }
 
-/* Timer
-.timer-container {
-    text-align: center;
-}
-  
-#timer {
-    padding-bottom: 1rem;
-    margin: auto;
-} */
-  
-/* #startStopButton,  */
 #printbutton {
     padding: 10px 10px;
     cursor: pointer;
@@ -653,7 +509,6 @@ button:hover {
     box-shadow: 2px 2px 4px rgba(0, 0, 0);
 }
 
-/* , #eyebutton:hover */
 #printbutton:hover {
  box-shadow: 4px 4px 4px #211e1d;
  background-color: #211e1d;
@@ -666,52 +521,3 @@ button:hover {
     height: 30px;
     object-fit: contain;
 }
-
-
-/*eye code*/
-/* body, html {
-    height: 100%;
-    margin: 0;
-  }
-  
-  #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s, visibility 0s linear 0s;
-  }
-  
-  #overlay.active {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0s, visibility 0s;
-  }
-  
-  .slide-box {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    background-color: black;
-    transition: transform 0s ease-in-out;
-  }
-  
-  .top {
-    top: 0;
-  }
-  
-  .bottom {
-    bottom: 0;
-  }
-  
-  #slideButton {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 10000;
-  } */
