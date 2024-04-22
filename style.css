@@ -37,11 +37,22 @@
         margin-right: 0.5rem;
     }
 
+    /* body {
+        /* background-color: #ffe6d4; */
+        /* overflow: hidden; */
+        /* background-image: url('ghj.png'); 
+    } */
+
+    body {
+        cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👁️</text></svg>") 16 0,auto;
+    }
+
     body {
         /* background-color: #ffe6d4; */
-        overflow: hidden;
-        background-image: url('ghj.png');
+        background: rgb(255,187,150);
+        background: linear-gradient(152deg, rgba(255,187,150,1) 0%, rgba(255,230,212,1) 58%, rgba(255,209,181,1) 100%);
     }
+
 
     nav {
         margin-bottom: 1rem;
@@ -98,16 +109,22 @@
 
     /*sliderrrr*/
 #grid {
+    /* display: none; */
     margin:auto;
     margin-top: 0px;
     width: 90%;
     height: 90vh;
     right: -100%;
     position: relative;
-    z-index: -5;
-    transition: right ease .1s;
+    z-index: 10;
+    transition: right 2s ease;
+    /* transition: right 1s ease-in; */
     /* animation: slideLeft 3s ease-in-out forwards; */
 }
+
+/* #grid.open {
+    right:0;
+} */
 
 /* @keyframes slideLeft {
     0% {

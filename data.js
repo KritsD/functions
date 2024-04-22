@@ -49,6 +49,8 @@ function whenlistchange(){
 
 function outputSolution(){
 
+	console.log("outputsolution function run")
+
     const results = document.getElementById('resultsDiv');
     const dataList = document.getElementById('data-list').value;
 	const dataList2 = document.getElementById('data-list2').value;
@@ -134,14 +136,22 @@ function outputSolution(){
 }
 
 function openMenu(){
+
 		//open
 		document.getElementById("gridwithbuttons").style.display = 'block';
 		document.getElementById("grid").style.right = "0%"
+
+		//without slide
+		// document.getElementById("grid").style.display = "block";
+
 }
 function closeMenu(){
 		//close
 		document.getElementById("gridwithbuttons").style.display = 'none';
 		document.getElementById("grid").style.right ="-100%"
+
+		//without slide
+		// document.getElementById("grid").style.display = "none";
 }
 
 
