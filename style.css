@@ -173,10 +173,6 @@
 
     /*sliderrrr*/
     #grid {
-        margin:auto;
-        margin-top: 0px;
-        width: 90%;
-        height: 90vh;
         right: -100%;
         position: relative;
         z-index: 10;
@@ -199,7 +195,7 @@
 
     .p1, .p2 {
         display:block;
-        margin-bottom: 1px;
+        margin-bottom: 10px;
     }
 
     #logo {
@@ -231,7 +227,15 @@
 
     .imagealign {
         border-radius: 10px;
+        object-fit: contain;
         width: 40%;
+    }
+
+    .image {
+        padding-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        /* align-items:first baseline; */
     }
 
     #signature {
@@ -261,7 +265,7 @@
     }
 
     h2, h3, h4 {
-        font-size: calc(1.9 * var(--typography-base));
+        font-size: calc(1.6 * var(--typography-base));
     }
 
     h3 {
@@ -270,13 +274,26 @@
 
     h4 {
         letter-spacing: 1px;
+        padding-top: 0.5rem;
     }
 
     .p2 {
-        font-size: calc(2.1 * var(--typography-base));
+        font-size: calc(1.8 * var(--typography-base));
         letter-spacing: -0.2px;
-        line-height: calc(3.1 * var(--typography-base));
-        margin-left:0;
+        line-height: calc(2.8 * var(--typography-base));
+        padding-right: 1rem;
+    }
+
+    /*sliderrrr*/
+    #grid {
+        margin:auto;
+        /* margin-top: 0px; */
+        width: 98%;
+        height: 100%;
+        right: -100%;
+        position: relative;
+        z-index: 10;
+        transition: right 1s ease;
     }
 
     /* .p2 {
@@ -297,7 +314,7 @@
     }
 
     h2, h3, h4 {
-        font-size: calc(1.9 * var(--typography-base));
+        font-size: calc(1.6 * var(--typography-base));
     }
 
     h3 {
@@ -309,10 +326,11 @@
     }
 
     .p2 {
-        font-size: calc(2.3 * var(--typography-base));
+        font-size: calc(1.8 * var(--typography-base));
         letter-spacing: -0.2px;
-        line-height: calc(3.3 * var(--typography-base));
+        line-height: calc(2.8 * var(--typography-base));
         margin-top:0;
+        margin-left: 0rem;
     }
 
     nav {
@@ -330,6 +348,34 @@
     } */
 }
 
+@media (min-width: 500px) {
+
+    .twocolumnresult{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 4%;
+        padding: 1rem;
+    }
+
+    .imagealign {
+        border-radius: 10px;
+        object-fit: contain;
+        width: 100%; 
+    }
+
+    .image {
+        /* padding-bottom: 1.5rem; */
+        display: flex;
+        justify-content: left;
+        align-items:first baseline;
+    }
+}
+
+@media (min-width: 562px) {
+    .p2 {
+        max-width: 80%;
+    }
+}
 
 @media (min-width: 750px) {
 
@@ -340,7 +386,7 @@
     }
 
     h2, h3, h4 {
-        font-size: calc(1.9 * var(--typography-base));
+        font-size: calc(1.6 * var(--typography-base));
     }
 
     h3 {
@@ -352,9 +398,10 @@
     }
 
     .p2 {
-        font-size: calc(2.2 * var(--typography-base));
+        font-size: calc(1.8 * var(--typography-base));
         letter-spacing: -0.2px;
-        line-height: calc(3.2 * var(--typography-base));;
+        line-height: calc(2.8 * var(--typography-base));
+        max-width: 100%;
     }
 
     main {
@@ -371,11 +418,20 @@
 
     #nav {
         margin: auto;
-        padding: 1.2rem;
+        padding: 0.5rem;
     }
-
-    #grid {
+    
+    /*sliderrrr*/
+     #grid {
+        margin:auto;
         margin: 2rem;
+        /* margin-top: 0px; */
+        width: 90%;
+        height: 90vh;
+        right: -100%;
+        position: relative;
+        z-index: 10;
+        transition: right 1s ease;
     }
 
     #prescription {
@@ -391,16 +447,16 @@
         grid-template-columns: auto auto auto;
     }
 
-    .twocolumnresult{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 4%;
-        padding: 1rem;
-    }
-
     .imagealign {
         border-radius: 10px;
         width: 100%;
+    }
+
+    .image {
+        /* padding-bottom: 1.5rem; */
+        display: flex;
+        justify-content: left;
+        align-items:first baseline;
     }
 
     #gridwithbuttons {
@@ -425,10 +481,15 @@
     }
 
     .p2 {
-        font-size: calc(2.7 * var(--typography-base));
+        font-size: calc(2.2 * var(--typography-base));
         letter-spacing: -0.2px;
-        line-height: calc(3.7 * var(--typography-base));
+        line-height: calc(3.2 * var(--typography-base));
         margin-top: 0;
+    }
+
+    #nav {
+        margin: auto;
+        padding: 0.5rem;
     }
 
     /* #resultsDiv {
