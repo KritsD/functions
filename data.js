@@ -70,8 +70,8 @@ function outputSolution(){
 					resultsremedyHeader.innerHTML = "<span class='p3'>remedy:</span><br>PALM THE EYES";
 					break;  
 				case "Blurred vision":
-					result = "<span class='p2'>Practicing taking breaks by looking away from the screen can help reduce eye tension and pain.</span>";
-					result += "<span class='p2'>Look at something at least 20 feet away for 20 seconds every 20 minutes.</span>";
+					result ="<span class='image'><img class='imagealign' src='giphy.gif'></span>";
+					result += "<span class='p2'>Practicing taking breaks by looking away from the screen can help reduce eye tension and pain. Look at something at least 20 feet away for 20 seconds every 20 minutes.</span>";
 					resultsfeelingHeader.innerHTML = "<span class='p3'>symptom:</span> <br> BLURED VISION";
 					resultstimeHeader.innerHTML = "<span class='p3'>time:</span><br> A MINUTE";
 					resultsremedyHeader.innerHTML = "<span class='p3'>remedy:</span><br> FOLLOW 20-20-20 RULE";
